@@ -1,0 +1,23 @@
+// Create a variable that holds a string value
+let item = "classwork";
+//  Create a variable that holds a number value
+let score = 10;
+//  Create a variable that holds a boolean value
+let answer = true;
+//  Create a variable that holds a null value
+let space = null;
+//  Create a variable that holds an undefined value
+let age;
+//  Create a variable that points to an object instance
+let user = {
+    name:"Kelley"};
+//  Create a variable that points to an array instance
+let list =  ["classwork", 10, "Kelley"];
+//  Create a variable that has no default value declaration
+let value = 
+
+
+
+
+
+

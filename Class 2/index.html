@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 2 Intermediate Excercise</title>
+</head>
+<body>
+  <ul id="grocery-list-container">
+    <!-- Dynamic! -->
+  </ul>
+
+  <script>
+    //create a list of objects with name + price
+    const groceryList = [
+      {name:"milk", price: 5},
+      {name:"bread", price: 3},
+      {name:"yogurt", price: 4},
+      {name:"coffee", price: 10}
+    ];
+
+
+//loop over list of ojects
+for (let food of groceryList) {
+ console.log(food);
+
+//create new list item <li>
+const listItem = document.createElement("li");
+
+//add food name and price to <li> as text
+listItem.innerText = `${food.name}: $${food.price}`;
+
+//create a JS reference to our HTML <ul> element
+const foodContainer = document.querySelector("#grocery-list-container")
+
+//append <li> to <ul>
+foodContainer.appendChild(listItem);  
+}
+  </script>
+</body>
+</html>
