@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 3 Foundations and Intermediate</title>
+</head>
+<body>
+    <button class=".btn">Click Me!</button>
+
+    <script>
+    // Aim: Create a function that takes in an argument and uses string interpolation 
+// to print that arguments value somewhere in a text string.
+
+function sayHello(name) {
+return `Hello ${name}` 
+}
+
+const variable = sayHello("Kelley")
+console.log(variable)
+
+// Aim: Create an application that, on button click, runs a function that prints out a users name, age, and occupation
+
+// grab elements from DOM
+const button = document.querySelector("button")
+
+// create user object
+const users = {
+    name: "Nathan",
+    age: 22,
+    occupation: "IT"
+}
+
+// create function
+function logUser(user) {  
+console.log(`name: ${user.name}`, `age: ${user.age}`,`occupation: ${user.occupation}`)
+}
+
+//create eventListener 
+button.addEventListener ("click",()=>  {logUser(users)})
+
+    </script>
+</body>
+</html>
