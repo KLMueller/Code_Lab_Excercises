@@ -1,0 +1,38 @@
+
+<!-- Aim: Write a function that returns an array containing all the numbers inclusive to that range given the start and end values. 
+Examples
+reversibleInclusiveList(1, 5)    ➞    [1, 2, 3, 4, 5]-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6 Intermediate Function Return an Array that includes a Number Range</title>
+</head>
+<body>
+    <h1 style="font-size:18px">Create a function that returns an array that includes a number range.</h1>
+        
+    <h2 style="font-size:16px">*Console should read "(9) [2, 3, 4, 5, 6, 7, 8, 9, 10]"*</h2>
+
+    <script>
+        // who
+    const range = [2,10];
+
+        // what
+    const naturalBetweenRange = ([lower, upper] = [1, 1]) => {
+        if(lower > upper){
+            return [];
+        };
+    const res = [];
+    for (let i =lower; i <= upper; i++){
+        res.push(i);
+    };
+    return res;
+    };
+        //when
+console.log(naturalBetweenRange(range));
+        </script>
+</body>
+</html>
