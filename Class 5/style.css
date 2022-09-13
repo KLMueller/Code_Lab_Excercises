@@ -1,0 +1,47 @@
+body {
+  background-image: url("night-sky_bg.jpeg");
+  background-color: #cccccc;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+form{
+margin-top: 10em;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+label{
+  text-align: center;
+  font-size: 18px;
+}
+input[type=text] {
+  width: 25%;
+  padding: 16px 8px;
+  margin: 12px 6px;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+  background-color: #81b4a1;
+  color: white;
+  cursor: text;
+}
+
+input[type=submit] {
+  width: 25%;
+  padding: 16px 8px;
+  margin: 12px 6px;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+  background-color: #81b4a1;
+  color: white;
+  cursor: pointer;
+}
