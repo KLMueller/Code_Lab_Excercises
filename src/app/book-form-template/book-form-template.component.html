@@ -1,0 +1,90 @@
+<!-- ~~~ !TEMPLATE DRIVEN APPROACH! ~~~ -->
+<form #bookForm="ngForm" (ngSubmit)="onFormSubmit()">
+  <div id="book-data">
+    <!-- Title -->
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        class="form-control"
+        ngModel
+        required
+        title
+        #title="ngModel"
+      />
+      <span
+        class="help-block text-danger"
+        *ngIf="!title.valid && title.touched"
+      >
+        Title is required
+      </span>
+    </div>
+
+    <!-- Author -->
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input
+        type="text"
+        id="author"
+        name="author"
+        class="form-control"
+        #author="ngModel"
+        required
+        ngModel
+        author
+      />
+      <span
+        class="help-block text-danger"
+        *ngIf="!author.valid && author.touched"
+      >
+        Author is required
+      </span>
+    </div>
+
+    <!-- Genre -->
+    <div class="form-group">
+      <label for="genre">Genre</label>
+      <select
+        id="genre"
+        name="genre"
+        class="form-control"
+        [ngModel]="selectedGenre"
+      >
+        <option *ngFor="let genre of genres" [value]="genre">
+          {{ genre }}
+        </option>
+      </select>
+    </div>
+
+    <!-- isBestSeller -->
+    <div class="form-group">
+      <p>Is this book a best seller?</p>
+
+      <!-- True -->
+      <input type="radio" id="true" name="isBestSeller" value="true" />
+      <label for="true" class="mr-3">True</label>
+
+      <!-- False -->
+      <input type="radio" id="false" name="isBestSeller" value="false" />
+      <label for="false">False</label>
+    </div>
+
+    <!-- Submit Button -->
+    <span *ngIf="!bookForm.valid && bookForm.touched"
+      >All lines must be completed to submit.</span
+    >
+    <button class="btn btn-warning" type="submit" [disabled]="!bookForm.valid">
+      Submit: {{ title.value }}
+    </button>
+  </div>
+</form>
+<div class="row mt-4" *ngIf="isSubmitted">
+  <div class="col-xs-12">
+    <h3>Thank you for adding:</h3>
+    <p>Title: {{ inputDetails.title }}</p>
+    <p>Author: {{ inputDetails.author }}</p>
+    <p>Genre: {{ inputDetails.genre }}</p>
+  </div>
+</div>
