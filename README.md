@@ -78,12 +78,12 @@ All array items are of the type bool (true or false).</li>
 Aim: Create a working JavaScript Clock or any other project we created today.</li>
 </ul>
 <hr>
-Class 5
+Class 5:
 Bookmarking App 
 Exercise #1: Intermediate
 Aim: Create an application that prints out users information on submission of a form and saves the results to local storage
 <hr>
-Class 6
+Class 6:
 JavaScript Essential Concepts
 Exercise #1: Basic
 Aim: Create a function that calculates the area of a triangle given the base and height as arguments. Call the function a few times with different inputs.
