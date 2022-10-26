@@ -77,3 +77,26 @@ All array items are of the type bool (true or false).</li>
 <li>Exercise #2: Advanced
 Aim: Create a working JavaScript Clock or any other project we created today.</li>
 </ul>
+<hr>
+Class 5
+Bookmarking App 
+Exercise #1: Intermediate
+Aim: Create an application that prints out users information on submission of a form and saves the results to local storage
+<hr>
+Class 6
+JavaScript Essential Concepts
+Exercise #1: Basic
+Aim: Create a function that calculates the area of a triangle given the base and height as arguments. Call the function a few times with different inputs.
+
+Exercise #1: Intermediate
+Aim: Write a function that returns an array containing all the numbers inclusive to that range given the start and end values. 
+
+Notes
+
+The resulting array's sort order is dependent on the input values.
+All inputs provided in the test scenarios are valid.
+If the start is greater than the end, return a descendingly sorted array; otherwise, ascendingly sorted.
+Exercise #3: Advanced
+Aim: Create a function that takes three collections of arguments and returns the sum of the product of the grouped numbers.
+<hr>
+
